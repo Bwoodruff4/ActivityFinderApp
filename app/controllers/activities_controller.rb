@@ -2,7 +2,7 @@ class ActivitiesController < ApplicationController
 
     def index
         @activities = Activity.all
-        render json: @users
+        render json: @activities
     end
 
     def show
