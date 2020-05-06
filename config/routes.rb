@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :api_keys
   resources :weathers
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :activities, only: [:index, :show, :create]
