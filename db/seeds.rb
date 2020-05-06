@@ -10,7 +10,7 @@ User.destroy_all
 Activity.destroy_all
 
 
-User.create(user_name: "Blake", zip_code:"80205")
+User.create(user_name: "Blake", password: "p", zip_code:"80205")
 
 Activity.create(name: "Hiking", description:"One foot in front of the other. Typically outside.", weather_type:"Clouds")
 Activity.create(name: "Skiing", description:"Go downhill fast. Typically on snow.", weather_type:"Snow")
