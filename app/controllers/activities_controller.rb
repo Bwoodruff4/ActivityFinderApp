@@ -17,4 +17,5 @@ class ActivitiesController < ApplicationController
             weather_type: params[:weather_type]
         )
     end
+    
 end
