@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_05_07_004247) do
     t.string "weather_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "picture"
+    t.text "picture"
   end
 
   create_table "api_keys", force: :cascade do |t|
