@@ -21,11 +21,12 @@ class UsersController < ApplicationController
 
     def update
         @user = User.find(params[:id])
+        id = @user.id
         @user = User.update(
             zip_code: params[:zip_code],
             password: params[:password]
         )
-        render json: @user
+        redirect_to "http://localhost:3001/user.html?id=#{id}"
     end
 
     def destroy
