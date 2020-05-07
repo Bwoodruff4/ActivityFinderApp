@@ -14,8 +14,9 @@ class ActivitiesController < ApplicationController
         @activity = Activity.create(
             name: params[:name],
             description: params[:description],
-            weather_type: params[:weather_type]
+            weather_type: params[:weather_type],
+            picture: params[:picture]
         )
     end
-    
+
 end
